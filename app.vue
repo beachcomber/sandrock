@@ -1,5 +1,10 @@
+<script setup lang="ts">
+import HeroHeader from './Components/HeroHeader.vue';
+</script>
+
 <template>
-  <div>
-    <h1>Hello Nuxt 3</h1>
-  </div>
+    <div class="bg-white">
+        <HeroHeader />
+        <NuxtPage />
+    </div>
 </template>

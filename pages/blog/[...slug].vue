@@ -1,0 +1,10 @@
+<template>
+    <main>
+        <H1>{{ $route.params.slug }}</H1>
+        <ContentDoc class="prose">
+            <template #not-found>
+                <h1>Document not found</h1>
+            </template>
+        </ContentDoc>
+    </main>
+</template>

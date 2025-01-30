@@ -13,6 +13,7 @@
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.2.0",
     "@nuxt/icon": "^1.10.3",
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
     "nuxt": "^3.15.4",
     "vue": "latest",
     "vue-router": "latest"

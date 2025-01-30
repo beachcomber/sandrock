@@ -1,3 +1,11 @@
+<script setup>
+const { data: posts } = useAsyncData('posts', () =>
+    queryContent('/blog')
+        .sort({ date: 1 })
+        .limit(3)
+        .find()
+)
+</script>
 <template>
     <div>
         <section>
@@ -18,50 +26,15 @@
                     dicta deleniti, expedita neque doloribus cum vel illo consectetur eveniet quos qui, laudantium
                     veritatis
                     quibusdam.</p>
-                <p class="text-lg py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste amet qui
-                    ut itaque
-                    earum dolor labore
-                    reiciendis id expedita et pariatur adipisci, aperiam voluptatem nam laudantium. Delectus, non
-                    laborum.</p>
-                <p class="text-lg py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste amet qui
-                    ut itaque
-                    earum dolor labore
-                    reiciendis id expedita et pariatur adipisci, aperiam voluptatem nam laudantium. Delectus, non
-                    laborum.</p>
-                <p class="text-lg py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste amet qui
-                    ut itaque
-                    earum dolor labore
-                    reiciendis id expedita et pariatur adipisci, aperiam voluptatem nam laudantium. Delectus, non
-                    laborum.</p>
-                <p class="text-lg py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste amet qui
-                    ut itaque
-                    earum dolor labore
-                    reiciendis id expedita et pariatur adipisci, aperiam voluptatem nam laudantium. Delectus, non
-                    laborum.</p>
-                <p class="text-lg py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste amet qui
-                    ut itaque
-                    earum dolor labore
-                    reiciendis id expedita et pariatur adipisci, aperiam voluptatem nam laudantium. Delectus, non
-                    laborum.</p>
-                <p class="text-lg py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste amet qui
-                    ut itaque
-                    earum dolor labore
-                    reiciendis id expedita et pariatur adipisci, aperiam voluptatem nam laudantium. Delectus, non
-                    laborum.</p>
-                <p class="text-lg py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste amet qui
-                    ut itaque
-                    earum dolor labore
-                    reiciendis id expedita et pariatur adipisci, aperiam voluptatem nam laudantium. Delectus, non
-                    laborum.</p>
-                <p class="text-lg py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iste amet qui
-                    ut itaque
-                    earum dolor labore
-                    reiciendis id expedita et pariatur adipisci, aperiam voluptatem nam laudantium. Delectus, non
-                    laborum.</p>
-
             </div>
             <img src="https://avatars.githubusercontent.com/u/572593?v=4&size=64" alt="Robert Wakeford"
                 class="w-1/2 md:max-w-sm self-start p-8 mx-auto rounded-full" />
+        </section>
+        <section>
+            <h2 class="text-3xl font-bold mt-20">Latest Posts</h2>
+            <div class="grid md:grid-cols-3 mt-8 gap-10">
+                <CardPost :posts="posts" />
+            </div>
         </section>
     </div>
 </template>

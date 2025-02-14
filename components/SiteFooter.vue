@@ -6,7 +6,7 @@ const links = [
 ]
 </script>
 <template>
-    <footer class="bg-gray-800 py-8 ">
+    <footer class="bg-lime-900 py-8 ">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex flex-row">
             <p class="flex-1 text-sm text-gray-500">© 2021 Robert Wakeford</p>
             <div class="flex flex-row justify-center gap-4 mb-4 mt-2">

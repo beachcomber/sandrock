@@ -2,7 +2,7 @@
 title: Nephromataceae
 description: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 date: 2025-01-31
-cover: nephromataceae.jpg
+cover: flora/nephromataceae-sm.jpg
 tags:
   - fungus
   - flora

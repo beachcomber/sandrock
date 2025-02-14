@@ -3,7 +3,7 @@ title: Lady's Smock
 latin-name: Cardamine pratensis
 description: Lady's Smock is a British native wildflower found in meadows and verges.   
 date: 2023-05-23
-cover: ladys-smock.jpg
+cover: flora/LadysSmock-sm.jpg
 tags:
   - flower
 ---

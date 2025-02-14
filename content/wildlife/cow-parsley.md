@@ -3,7 +3,7 @@ title: Cow Parsley
 latin-name: Anthriscus sylvestris
 description: A herbaceous biennial or short-lived perennial plant in the family Apiaceae (Umbelliferae).
 date: 2023-02-11
-cover: cow-parsley.jpg
+cover: flora/cow-parsley-sm.jpg
 tags:
   - flower
 ---

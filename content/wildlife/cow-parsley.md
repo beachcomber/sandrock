@@ -10,4 +10,4 @@ tags:
 A herbaceous biennial or short-lived perennial plant in the family Apiaceae (Umbelliferae). It is also sometimes called mother-die (especially in the UK), a name that is also applied to the common hawthorn. It is native to Europe, western Asia and northwestern Africa.
 \
 \
-![Cow Parsley](/images/flora/cow-parsley.jpg)
+![Cow Parsley](/images/flora/cow-parsley-sm.jpg)

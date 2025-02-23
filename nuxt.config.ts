@@ -4,27 +4,27 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     ssr: true,
     modules: [
-        '@nuxtjs/tailwindcss',
-        '@nuxt/icon',
-        '@nuxt/content',
-        ['@nuxtjs/google-fonts',{
-            families: {
-            Roboto: true,
-            Inter: [400, 700],
-            'Josefin+Sans': true,
-            Lato: [100, 300],
-            Raleway: {
-                wght: [100, 400],
-                ital: [100]
-            },
-            Inter: '200..700',
-            'Crimson Pro': {
-                wght: '200..900',
-                ital: '200..700',
-            }
-            }
-        }],
-        'nuxt-easy-lightbox',
+      '@nuxtjs/tailwindcss',
+      '@nuxt/icon',
+      '@nuxt/content',
+      ['@nuxtjs/google-fonts',{
+          families: {
+          Roboto: [100,200,300,400,500,600,700,800,900],
+          Inter: [400, 700],
+          'Josefin+Sans': true,
+          Lato: [100, 300],
+          Raleway: {
+              wght: [100, 400],
+              ital: [100]
+          },
+          Inter: '200..700',
+          'Crimson Pro': {
+              wght: '200..900',
+              ital: '200..700',
+          }
+          }
+      }],
+      'vue3-carousel-nuxt'
     ],
     content: {
         highlight: {

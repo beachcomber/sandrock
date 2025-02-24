@@ -9,9 +9,7 @@ const { data } = await useAsyncData('page-data', () => queryContent(path).findOn
             <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
                 <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
                     <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-                        <div
-                            class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-gray-900/10 lg:w-1/2">
-                        </div>
+                        <div class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-gray-900/10 lg:w-1/2"></div>
                         <h2 class="text-pretty text-4xl font-semibold tracking-tight text-lime-900 sm:text-5xl">Get
                             in <span class="text-lime-600">touch</span></h2>
                         <p class="mt-6 text-lg/8 text-gray-600">We are very keen for people to join in our campaign to
@@ -103,6 +101,4 @@ const { data } = await useAsyncData('page-data', () => queryContent(path).findOn
         </div>
     </div>
 </template>
-
-
 <style></style>

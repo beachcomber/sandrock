@@ -7,16 +7,16 @@
 </head>
 <body>
                 <form 
-                    name="contact-sandrock" 
+                    name="contact" 
                     type="hidden"
                     method="POST" 
                     data-netlify="true" 
-                    action="./success.html"
-                    data-netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="contact-sandrock">
+                    action="./contact.html"
+                    netlify-honeypot="secondary-email">
+                    <input type="hidden" name="form-name" value="contact">
                     <p class="hidden">
                         <label>
-                            Don’t fill this out if you’re human: <input name="bot-field" />
+                            Don’t fill this out if you’re human: <input name="secondary-email" />
                         </label>
                     </p>
                     <label for="first-name">First name</label>

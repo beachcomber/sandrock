@@ -52,8 +52,10 @@ const { data } = await useAsyncData('page-data', () => queryContent(path).findOn
                 <form 
                     name="contact-sandrock" 
                     method="POST" 
-                    data-netlify="true" data-netlify-honeypot="bot-field"
-                    data-netlify-recaptcha="true" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                    data-netlify="true" 
+                    action="./contact-sandrock-form.html"
+                    data-netlify-honeypot="bot-field"
+                    class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
                     <input type="hidden" name="form-name" value="contact-sandrock">
                     <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -100,7 +102,6 @@ const { data } = await useAsyncData('page-data', () => queryContent(path).findOn
                                         class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-lime-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-lime-600" />
                                 </div>
                             </div>
-                            <div data-netlify-recaptcha="true"></div>
                         </div>
                         <div class="mt-8 flex justify-end">
                             <button type="submit"

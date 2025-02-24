@@ -82,7 +82,7 @@ const images = [
             </p>
         </section>
         <section>
-            <h3 class="text-3xl my-8 text-lime-900"><span class="text-lime-600">Harrow lane</span> 2009 - 2025 Google
+            <h3 class="text-3xl my-8 text-lime-900"><span class="text-lime-600">Harrow lane</span> 2009 - 2024 Google
                 Streetview images
             </h3>
             <Carousel v-bind="config">

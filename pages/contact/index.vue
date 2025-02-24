@@ -50,13 +50,11 @@ const { data } = await useAsyncData('page-data', () => queryContent(path).findOn
                     </div>
                 </div>
                 <form 
-                    name="contact" 
+                    name="contact-sandrock" 
                     method="POST" 
-                    data-netlify="true" 
-                    netlify-honeypot="bot-field"
-                    data-netlify-recaptcha="true" 
-                    class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
-                    <input type="hidden" name="form-name" value="contact" />
+                    data-netlify="true" data-netlify-honeypot="bot-field"
+                    data-netlify-recaptcha="true" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                    <input type="hidden" name="form-name" value="contact-sandrock">
                     <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>

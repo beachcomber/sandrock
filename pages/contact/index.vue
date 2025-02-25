@@ -49,15 +49,17 @@ const { data } = await useAsyncData('page-data', () => queryContent(path).findOn
                         </dl>
                     </div>
                 </div>
-                <form name="contact" method="POST" data-netlify="true" action="./contact.html"
-                    data-netlify-honeypot="secondary-email" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
-                    <input type="hidden" name="form-name" value="contact">
+                <form name="sandrock-contact" 
+                    method="POST" data-netlify="true" 
+                    netlify-honeypot="second-input"
+                    class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                    <input type="hidden" name="form-name" value="sandrock-contact">
                     <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
                                 <p class="hidden">
                                     <label>
-                                        Don’t fill this out if you’re human: <input name="secondary-email" />
+                                        Don’t fill this out if you’re human: <input name="second-input" />
                                     </label>
                                 </p>
                                 <label for="first-name" class="block text-sm/6 font-semibold text-lime-900">First

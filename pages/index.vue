@@ -9,17 +9,30 @@ const { data: posts } = useAsyncData('posts', () =>
 );
 
 const socials = [
-    { name: 'Facebook', href: 'http://facebook.com', icon: 'fa-brands:facebook-square' },
+    { name: 'Facebook', href: 'https://www.facebook.com/share/1A2cv68dp8/?mibextid=wwXIfr', icon: 'fa-brands:facebook-square' },
 ];
 
 const config = {
     height: 350,
-    itemsToShow: 2,
+    itemsToShow: 1,
     gap: 5,
     autoplay: 4000,
     wrapAround: true,
     pauseAutoplayOnHover: true,
+    snapAlign: 'center',
 
+    // 'breakpointMode' determines how the carousel breakpoints are calculated
+    // Acceptable values: 'viewport' (default) | 'carousel'
+    // 'viewport' - breakpoints are based on the viewport width
+    // 'carousel' - breakpoints are based on the carousel width
+    breakpointMode: 'viewport',
+    breakpoints: {
+        // 500px and up
+        1000: {
+            itemsToShow: 2,
+            snapAlign: 'start',
+        },
+    },
 };
 
 const images = [
@@ -36,26 +49,18 @@ const images = [
 </script>
 <template>
     <div class="relative isolate overflow-hidden bg-white">
-        <div class="prose prose-2xl prose-slate mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-20">
-            <div class="mx-auto max-w-2xl lg:mx-0 lg:shrink-0 lg:pt-8 lg:pr-8">
-                <h1 class="mt-10 text-pretty text-5xl font-semibold tracking-tight text-lime-900 sm:text-7xl">Sandrock
+        <div class="prose prose-2xl prose-slate mx-auto max-w-7xl px-6 pb-10 pt-10 lg:flex lg:px-8 lg:pt-20 lg:pb-0">
+            <div class="mx-auto lg:max-w-md lg:mx-0 lg:shrink-0 lg:pt-8 lg:pr-8">
+
+                <h1 class=" mt-10 text-pretty text-5xl font-semibold tracking-tight text-lime-900 sm:text-7xl">Sandrock
                     needs your <span class="text-lime-600">help!</span></h1>
                 <p class="mt-8 text-pretty text-lg sm:text-xl/8">The local council in it's
                     wisdom has seen fit to bulldoze the last green corridors in Hastings.
                 </p>
-                <p class="mt-10 flex items-center gap-x-6">
-                    <NuxtLink to="/about" class="text-pretty text-lg sm:text-xl/8 font-semibold text-lime-900">
-                        Learn more <span aria-hidden="true">→</span>
-                    </NuxtLink>
-                </p>
-                <h2 class="text-3xl my-8 text-lime-900">Join us on Facebook!</h2>
-                <p class="mt-8 text-pretty text-lg sm:text-xl/8">
-                    This is a fast moving situation and the easiest way to keep abreast with the latest developments (no
-                    pun intended) is to join The St Helens Woods Facebook group.
-                </p>
-                <a v-for="social in socials" :key="social.name" :href="social.href" class="block text-center">
-                    <Icon :name="social.icon" size="8rem" class="text-lime-900 hover:text-lime-600" />
-                </a>
+                <div class="mt-10 flex items-center gap-x-6">
+                    <NuxtLink to="/about" class=" text-pretty text-lg sm:text-xl/8 font-semibold text-lime-900">Learn
+                        more <span aria-hidden="true">→</span></NuxtLink>
+                </div>
             </div>
             <div
                 class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
@@ -67,6 +72,18 @@ const images = [
                 </div>
             </div>
         </div>
+        <section class="prose prose-slate mx-auto max-w-7xl mb-8">
+            <h2 class="text-3xl my-8 text-lime-900">Join us on Facebook!</h2>
+            <p class="mt-8 text-pretty text-lg sm:text-xl/8">
+                This is a fast moving situation and the easiest way to keep abreast with the latest developments (no pun
+                intended) is to join The St Helens Woods Facebook group.
+            </p>
+            <p class="text-center">
+                <a v-for="social in socials" :key="social.name" :href="social.href">
+                    <Icon :name="social.icon" size="8rem" class="text-lime-900 hover:text-lime-600" />
+                </a>
+            </p>
+        </section>
         <section class="prose prose-slate mx-auto max-w-7xl mb-8">
             <h2 class="text-3xl my-8 text-lime-900">What we are trying to protect</h2>
             <p class="text-pretty text-lg sm:text-xl/8">Please take a moment to enjoy the beauty of Sandrock with this
@@ -86,7 +103,10 @@ const images = [
                 Lane Recreation ground. This is reality of what will befall <strong>Sandrock!</strong> if we fail to
                 protect this vital ecosystem!can be graphicly illustrated by these Google
                 Map Streetview images of the Harrow Lane through the years.</p>
-            <p>Please get involved to help prevent the same fate befalling <bold>Sandrock!</bold>
+            <p class="text-pretty text-lg sm:text-xl/8">Please <a
+                    href="https://www.facebook.com/share/1A2cv68dp8/?mibextid=wwXIfr" class="text-lime-900 hover:text-lime-600">get involved</a> to help prevent
+                the same fate befalling
+                <bold>Sandrock!</bold>
             </p>
         </section>
         <section class="mx-auto max-w-7xl mb-8">

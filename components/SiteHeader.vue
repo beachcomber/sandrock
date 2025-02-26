@@ -8,7 +8,7 @@ const navigation = [
     { name: 'Home', href: '/', current: route.name === 'index' },
     { name: 'Wildlife', href: '/wildlife', current: route.name.includes('wildlife') },
     { name: 'About', href: '/about', current: route.name === ('about') },
-    { name: 'Contact', href: '/contact', current: route.name.includes('contact') },
+    // { name: 'Contact', href: '/contact', current: route.name.includes('contact') },
 ]
 </script>
 <template>

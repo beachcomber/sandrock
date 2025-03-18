@@ -4,14 +4,17 @@ module.exports = {
         "./components/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        fontFamily: {
-            'sans': ['Roboto','ui-sans-serif', 'system-ui'],
-            'serif': ['ui-serif', 'Georgia'],
-            'mono': ['ui-monospace', 'SFMono-Regular'],
+        extend: {
+            fontFamily: {
+                'sans': ['Roboto','ui-sans-serif', 'system-ui'],
+                'serif': ['ui-serif', 'Georgia'],
+                'mono': ['ui-monospace', 'SFMono-Regular'],
+            },
+            colors: {
+                'facebook': '#1877F2',
+            },
         },
-        h1: {
-            fontFamily: 'Times, serif',
-        }
+
     },
     plugins: [
         require('@tailwindcss/typography'),

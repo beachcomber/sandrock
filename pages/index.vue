@@ -20,11 +20,6 @@ const config = {
     wrapAround: true,
     pauseAutoplayOnHover: true,
     snapAlign: 'center',
-
-    // 'breakpointMode' determines how the carousel breakpoints are calculated
-    // Acceptable values: 'viewport' (default) | 'carousel'
-    // 'viewport' - breakpoints are based on the viewport width
-    // 'carousel' - breakpoints are based on the carousel width
     breakpointMode: 'viewport',
     breakpoints: {
         // 500px and up
@@ -54,12 +49,19 @@ const images = [
 
                 <h1 class=" mt-10 text-pretty text-5xl font-semibold tracking-tight text-lime-900 sm:text-7xl">Sandrock
                     needs your <span class="text-lime-600">help!</span></h1>
-                <p class="mt-8 text-pretty text-lg sm:text-xl/8">The local council in it's
-                    wisdom has seen fit to bulldoze the last green corridors in Hastings.
+                <p class="mt-8 text-pretty text-lg sm:text-xl/8">Sandrock Bends on The Ridge is currently under
+                    consideration for building 80 houses.
+                    This will destroy a unique and beautiful area of natural beauty and wildlife habitat. We need your
+                    help to stop this from happening.
                 </p>
                 <div class="mt-10 flex items-center gap-x-6">
-                    <NuxtLink to="/about" class=" text-pretty text-lg sm:text-xl/8 font-semibold text-lime-900">Learn
-                        more <span aria-hidden="true">→</span></NuxtLink>
+                    <h4>Learn more about each impact</h4><br>
+                    <ul>
+                        <li>Wildlife</li>
+                        <li>Flooding</li>
+                        <li>Infrastructure Traffic and Transport</li>
+                        <li>Affordable Housing?</li>
+                    </ul>
                 </div>
             </div>
             <div
@@ -73,16 +75,46 @@ const images = [
             </div>
         </div>
         <section class="prose prose-slate mx-auto max-w-7xl mb-8">
-            <h2 class="text-3xl my-8 text-lime-900">Join us on Facebook!</h2>
+            <h2 class="text-3xl my-8 text-lime-900">Join the campaign!</h2>
             <p class="mt-8 text-pretty text-lg sm:text-xl/8">
-                This is a fast moving situation and the easiest way to keep abreast with the latest developments (no pun
-                intended) is to join The St Helens Woods Facebook group.
+                From sharing on Facebook to joining our team, you can make a difference.
             </p>
-            <p class="text-center">
+            <h3>Get Started here:</h3>
+            <ul>
+                <li>Use this website to learn more</li>
+                <li><strong>Donate or share on the</strong> <a
+                        href="https://www.justgiving.com/page/savesthelenswoodswildcorridor?utm_medium=FR&utm_source=CL"
+                        target="_blank">Just
+                        Giving page</a> to support the cost of professional
+                    expertise to inform their response.</li>
+                <li>Email all Hastings Borough Councillors: See their email addresses <a
+                        href="https://hastings.moderngov.co.uk/mgCommitteeMailingList.aspx?ID=0"
+                        target="_blank">here</a>.</li>
+                <li><strong>Share</strong> on social media.</li>
+                <li><strong>Write to or email our MP</strong> <a
+                        href="mailto:helena.dollimore.mp@parliament.uk">helena.dollimore.mp@parliament.uk</a> with
+                    concerns about
+                    landslips, flooding, and erosion. See <NuxtLink to="/flooding">HERE</NuxtLink> for more details on
+                    these issues (Link HERE to Flooding
+                    page</li>
+                <li><strong>Contact us</strong> to help with leafleting, media management, or to offer other skills on
+                    <a href="mailto:savesandrockbends@gmail.com">savesandrockbends@gmail.com</a>.
+                </li>
+                <li>
+                    <strong>Comment on HBC planning page:</strong> We’ll provide a link as soon as it opens.
+                </li>
+                <li>
+                    Review <a href="https://your-views.co.uk/hastingstheridge/#firstPage/visionandplans"
+                        target="_blank">the Gladmans Sales Pitch</a>.
+                </li>
+            </ul>
+
+            <!-- <p class="text-center">
                 <a v-for="social in socials" :key="social.name" :href="social.href">
-                    <Icon :name="social.icon" size="8rem" class="text-lime-900 hover:text-lime-600" />
+                    <Icon :name="social.icon" size="8rem"
+                        class="text-lime-900 hover:text-facebook active:text-facebook" />
                 </a>
-            </p>
+            </p> -->
         </section>
         <section class="prose prose-slate mx-auto max-w-7xl mb-8">
             <h2 class="text-3xl my-8 text-lime-900">What we are trying to protect</h2>
@@ -104,7 +136,8 @@ const images = [
                 protect this vital ecosystem!can be graphicly illustrated by these Google
                 Map Streetview images of the Harrow Lane through the years.</p>
             <p class="text-pretty text-lg sm:text-xl/8">Please <a
-                    href="https://www.facebook.com/share/1A2cv68dp8/?mibextid=wwXIfr" class="text-lime-900 hover:text-lime-600">get involved</a> to help prevent
+                    href="https://www.facebook.com/share/1A2cv68dp8/?mibextid=wwXIfr"
+                    class="text-lime-900 hover:text-lime-600">get involved</a> to help prevent
                 the same fate befalling
                 <bold>Sandrock!</bold>
             </p>
@@ -126,12 +159,6 @@ const images = [
     </div>
 </template>
 <style scoped>
-.carousel button.carousel__prev,
-.carousel button.carousel__next {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-}
-
 .carousel time {
     font-size: 10rem;
     color: #fff;

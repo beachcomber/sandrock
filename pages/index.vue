@@ -50,8 +50,7 @@ const images = [
                 <h1 class=" mt-10 text-pretty text-5xl font-semibold tracking-tight text-lime-900 sm:text-7xl">Sandrock
                     needs your <span class="text-lime-600">help!</span></h1>
                 <p class="mt-8 text-pretty text-lg sm:text-xl/8">Sandrock Bends on The Ridge is currently under
-                    consideration for building 80 houses.
-                    This will destroy a unique and beautiful area of natural beauty and wildlife habitat. We need your
+                    threat of development for 80 houses, destroying the last remaining wildlife corridor between the High Weald and St Helen's Woods. We need your
                     help to stop this from happening.
                 </p>
                 <div class="mt-10 flex items-center gap-x-6">

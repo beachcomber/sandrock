@@ -50,16 +50,19 @@ const images = [
                 <h1 class=" mt-10 text-pretty text-5xl font-semibold tracking-tight text-lime-900 sm:text-7xl">Sandrock
                     needs your <span class="text-lime-600">help!</span></h1>
                 <p class="mt-8 text-pretty text-lg sm:text-xl/8">Sandrock Bends on The Ridge is currently under
-                    threat of development for 80 houses, destroying the last remaining wildlife corridor between the High Weald and St Helen's Woods. We need your
+                    threat of development for 80 houses, destroying the last remaining wildlife corridor between the
+                    High Weald and St Helen's Woods. We need your
                     help to stop this from happening.
                 </p>
-                <div class="mt-10 flex items-center gap-x-6">
-                    <h4>Learn more about each impact</h4><br>
-                    <ul>
-                        <li>Wildlife</li>
-                        <li>Flooding</li>
-                        <li>Infrastructure Traffic and Transport</li>
-                        <li>Affordable Housing?</li>
+                <div class="mt-10 flex flex-col">
+                    <h5>Learn more about each impact</h5>
+                    <ul class="mt-0">
+                        <li class="text-pretty text-lg sm:text-xl/8 m-0">
+                            <vlink>Wildlife</vlink>
+                        </li>
+                        <li class="text-pretty text-lg sm:text-xl/8 m-0">Flooding</li>
+                        <li class="text-pretty text-lg sm:text-xl/8 m-0">Infrastructure Traffic and Transport</li>
+                        <li class="text-pretty text-lg sm:text-xl/8 m-0">Affordable Housing?</li>
                     </ul>
                 </div>
             </div>
@@ -80,29 +83,30 @@ const images = [
             </p>
             <h3>Get Started here:</h3>
             <ul>
-                <li>Use this website to learn more</li>
-                <li><strong>Donate or share on the</strong> <a
+                <li class="text-pretty text-lg sm:text-xl/8 m-0">Use this website to learn more</li>
+                <li class="text-pretty text-lg sm:text-xl/8 m-0"><strong>Donate or share on the</strong> <a
                         href="https://www.justgiving.com/page/savesthelenswoodswildcorridor?utm_medium=FR&utm_source=CL"
                         target="_blank">Just
                         Giving page</a> to support the cost of professional
                     expertise to inform their response.</li>
-                <li>Email all Hastings Borough Councillors: See their email addresses <a
-                        href="https://hastings.moderngov.co.uk/mgCommitteeMailingList.aspx?ID=0"
+                <li class="text-pretty text-lg sm:text-xl/8 m-0">Email all Hastings Borough Councillors: See their email
+                    addresses <a href="https://hastings.moderngov.co.uk/mgCommitteeMailingList.aspx?ID=0"
                         target="_blank">here</a>.</li>
-                <li><strong>Share</strong> on social media.</li>
-                <li><strong>Write to or email our MP</strong> <a
+                <li class="text-pretty text-lg sm:text-xl/8 m-0"><strong>Share</strong> on social media.</li>
+                <li class="text-pretty text-lg sm:text-xl/8 m-0"><strong>Write to or email our MP</strong> <a
                         href="mailto:helena.dollimore.mp@parliament.uk">helena.dollimore.mp@parliament.uk</a> with
                     concerns about
                     landslips, flooding, and erosion. See <NuxtLink to="/flooding">HERE</NuxtLink> for more details on
                     these issues (Link HERE to Flooding
                     page</li>
-                <li><strong>Contact us</strong> to help with leafleting, media management, or to offer other skills on
+                <li class="text-pretty text-lg sm:text-xl/8 m-0"><strong>Contact us</strong> to help with leafleting,
+                    media management, or to offer other skills on
                     <a href="mailto:savesandrockbends@gmail.com">savesandrockbends@gmail.com</a>.
                 </li>
-                <li>
+                <li class="text-pretty text-lg sm:text-xl/8 m-0">
                     <strong>Comment on HBC planning page:</strong> We’ll provide a link as soon as it opens.
                 </li>
-                <li>
+                <li class="text-pretty text-lg sm:text-xl/8 m-0">
                     Review <a href="https://your-views.co.uk/hastingstheridge/#firstPage/visionandplans"
                         target="_blank">the Gladmans Sales Pitch</a>.
                 </li>

@@ -32,6 +32,9 @@ export default defineNuxtConfig({
             theme: 'nord',
             preload: ['css', 'js', 'html', 'xml'],
         },
+        markdown: {
+            anchorLinks: false,
+        },
     },
     css: [
         '~/assets/css/global.css',

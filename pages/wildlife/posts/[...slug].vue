@@ -11,6 +11,7 @@ const { data } = await useAsyncData(`blog-article`, () => {
     <div class="">
         <ContentRenderer :value="data" class="prose my-8 mx-auto max-w-7xl" tag="article">
             <h1 class="text-3xl my-8 text-lime-900">{{ data.title }}</h1>
+
             <ContentRendererMarkdown :value="data" class="my-8" />
         </ContentRenderer>
         <!-- <div class="my-8">

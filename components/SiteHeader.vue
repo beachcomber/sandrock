@@ -7,11 +7,13 @@ const route = useRoute();
 const navigation = [
     { name: 'Home', href: '/', current: route.name === 'index' },
     { name: 'Wildlife', href: '/wildlife', current: route.name.includes('wildlife') },
-    { name: 'Flooding', href: '/flooding', current: route.name === ('flooding') },
-    { name: 'About', href: '/about', current: route.name === ('about') },
-    { name: 'Links', href: '/links', current: route.name === ('links') },
-    { name: 'Affordable', href: '/affordable', current: route.name === ('affordable') },
-    { name: 'Infrastructure', href: '/infrastructure', current: route.name === ('infrastructure') },
+    { name: 'Flooding', href: '/flooding', current: route.name.includes('flooding') },
+    { name: 'About', href: '/about', current: route.name.includes('about') },
+    {
+        name: 'Links', href: '/links', current: route.name.includes('links')
+    },
+    { name: 'Affordable', href: '/affordable', current: route.name.includes('affordable') },
+    { name: 'Infrastructure', href: '/infrastructure', current: route.name.includes('infrastructure') },
     // { name: 'Contact', href: '/contact', current: route.name === ('contact') },
     // { name: 'Contact', href: '/contact', current: route.name.includes('contact') },
 ]

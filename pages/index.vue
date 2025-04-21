@@ -58,9 +58,12 @@ const images = [
                     <h5>Learn more about each impact</h5>
                     <ul class="mt-0">
                         <li class="text-pretty text-lg sm:text-xl/8 m-0">
-                            <vlink>Wildlife</vlink>
+                            <NuxtLink to="/wildlife">Wildlife</NuxtLink>
                         </li>
-                        <li class="text-pretty text-lg sm:text-xl/8 m-0">Flooding</li>
+                        <li class="text-pretty text-lg sm:text-xl/8 m-0">
+                            <NuxtLink to="/flooding">
+                                Flooding</NuxtLink>
+                        </li>
                         <li class="text-pretty text-lg sm:text-xl/8 m-0">Infrastructure Traffic and Transport</li>
                         <li class="text-pretty text-lg sm:text-xl/8 m-0">Affordable Housing?</li>
                     </ul>
@@ -87,7 +90,7 @@ const images = [
                 <li class="text-pretty text-lg sm:text-xl/8 m-0"><strong>Donate or share on the</strong> <a
                         href="https://www.justgiving.com/page/savesthelenswoodswildcorridor?utm_medium=FR&utm_source=CL"
                         target="_blank">Just
-                        Giving page</a> to support the cost of professional
+                        Giving</a> page to support the cost of professional
                     expertise to inform their response.</li>
                 <li class="text-pretty text-lg sm:text-xl/8 m-0">Email all Hastings Borough Councillors: See their email
                     addresses <a href="https://hastings.moderngov.co.uk/mgCommitteeMailingList.aspx?ID=0"
